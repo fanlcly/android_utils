@@ -28,7 +28,7 @@
 
 另外还要感谢JakeWharton提供的[timber](https://github.com/JakeWharton/timber)和[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)的作者以及被借鉴的N多优秀的工具类的作者们！！  
 
-####如何使用：  
+#### 如何使用：  
 1.将其添加到project的build.gradle中。  
 
 	allprojects {
