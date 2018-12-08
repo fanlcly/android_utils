@@ -21,3 +21,7 @@
 [ClearEditText](https://github.com/fanlcly/android_utils/blob/master/androidutils/src/main/java/com/fancy/androidutils/widget/ClearEditText.java)  
 [SmoothCheckBox](https://github.com/fanlcly/android_utils/blob/master/androidutils/src/main/java/com/fancy/androidutils/widget/SmoothCheckBox.java)  
 [SwitchButton](https://github.com/fanlcly/android_utils/blob/master/androidutils/src/main/java/com/fancy/androidutils/widget/SwitchButton.java)  
+
+引用到的库：  
+[picasso](http://square.github.io/picasso/)  
+[PickerView](https://github.com/Bigkoo/Android-PickerView)  
