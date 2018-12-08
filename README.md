@@ -48,8 +48,9 @@
 	</repositories>
 
 2.添加依赖到APP的build.gradle中。  
+
 	dependencies {
-	        implementation 'com.github.fanlcly:android_utils:0.0.1'
+	        implementation 'com.github.fanlcly:android_utils:Tag'
 	}
   
   或者  
