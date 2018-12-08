@@ -1,7 +1,7 @@
 # android_utils
 整理了一个强大的android工具库和常用的控件，会持续更新。
 
-工具库： 
+工具库：  
 [DatePickerViewUtils](https://github.com/fanlcly/android_utils/blob/master/androidutils/src/main/java/com/fancy/androidutils/utils/DatePickerViewUtils.java)  
 [DateUtils](https://github.com/fanlcly/android_utils/blob/master/androidutils/src/main/java/com/fancy/androidutils/utils/DateUtils.java)  
 [DensityUtils](https://github.com/fanlcly/android_utils/blob/master/androidutils/src/main/java/com/fancy/androidutils/utils/DensityUtils.java)  
