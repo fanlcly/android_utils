@@ -27,3 +27,36 @@
 [PickerView](https://github.com/Bigkoo/Android-PickerView)  
 
 另外还要感谢JakeWharton提供的[timber](https://github.com/JakeWharton/timber)和[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)的作者以及被借鉴的N多优秀的工具类的作者们！！  
+
+用法：
+####如何使用：  
+1.将其添加到project的build.gradle中。  
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+  
+  或者添加maven  
+  
+  	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+2.添加依赖到APP的build.gradle中。  
+	dependencies {
+	        implementation 'com.github.fanlcly:android_utils:0.0.1'
+	}
+  
+  或者  
+  
+  	<dependency>
+	    <groupId>com.github.fanlcly</groupId>
+	    <artifactId>android_utils</artifactId>
+	    <version>0.0.1</version>
+	</dependency>
