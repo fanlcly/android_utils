@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--dialog基本样式-->
+    <style name="AlertView" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明，没毛边-->
+    </style>
+
+
+
+
+</resources>

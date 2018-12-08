@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/navigation_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/trans_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            tools:ignore="ContentDescription"
+            tools:src="@color/text_037BFF" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="12dp"
+            android:textColor="@color/text_666666"
+            tools:text="工作圈" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/v_dot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_above="@id/navigation_layout"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_toRightOf="@id/navigation_layout"
+        android:background="@drawable/shape_dot"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded" />
+
+
+    <TextView
+        android:id="@+id/tv_message_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/navigation_layout"
+        android:layout_marginBottom="-14dp"
+        android:layout_marginLeft="-8dp"
+        android:layout_toRightOf="@id/navigation_layout"
+        android:background="@drawable/message_dot"
+        android:gravity="center"
+        android:minWidth="14dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded,SpUsage"
+        tools:text="2222" />
+
+
+</RelativeLayout>
