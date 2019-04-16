@@ -44,7 +44,7 @@ public class DateUtils {
     public static final String DF_HH_MM = "HH:mm";
 
     private DateUtils() {
-        throw new UnsupportedOperationException("no instantiate");
+        throw new UnsupportedOperationException("u can't instantiate me...");
     }
 
     /**

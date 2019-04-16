@@ -26,7 +26,7 @@ public class SpUtils {
     private static SharedPreferences sp;
 
     private SpUtils() {
-        throw new AssertionError();
+        throw new UnsupportedOperationException("u can't instantiate me...");
     }
 
 

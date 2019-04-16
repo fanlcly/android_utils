@@ -15,7 +15,7 @@ public class ScreenUtils {
 
 
     private ScreenUtils() {
-        throw new UnsupportedOperationException("no instantiate");
+        throw new UnsupportedOperationException("u can't instantiate me...");
     }
 
     /**
