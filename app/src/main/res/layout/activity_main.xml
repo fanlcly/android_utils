@@ -22,6 +22,26 @@
                 android:id="@+id/btn2"
                 style="@style/btn"
                 android:text="数据列表" />
+            <Button
+                android:id="@+id/btn3"
+                style="@style/btn"
+                android:text="alertView" />
+            <Button
+                android:id="@+id/btn4"
+                style="@style/btn"
+                android:text="dialog_left" />
+            <Button
+                android:id="@+id/btn5"
+                style="@style/btn"
+                android:text="dialog_top" />
+            <Button
+                android:id="@+id/btn6"
+                style="@style/btn"
+                android:text="dialog_right" />
+            <Button
+                android:id="@+id/btn7"
+                style="@style/btn"
+                android:text="dialog_bottom" />
 
         </LinearLayout>
     </ScrollView>

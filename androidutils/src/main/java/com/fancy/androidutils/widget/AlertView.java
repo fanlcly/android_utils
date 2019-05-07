@@ -20,9 +20,8 @@ import com.fancy.androidutils.R;
  * @version 1.0 2018\11\29 0029
  * @since JDK 1.7
  */
-public class AlertView {
+public class AlertView extends BaseDialog{
 
-    private Context mContext;
     private final DisplayMetrics dm;
 
     private LinearLayout lLayout_bg;
@@ -32,7 +31,6 @@ public class AlertView {
     private Button btn_pos;
     private View img_line;
 
-    private Dialog dialog;
 
     private boolean showTitle = false;
     private boolean showMsg = false;
@@ -40,13 +38,14 @@ public class AlertView {
     private boolean showNegBtn = false;
 
     public AlertView(Context mContext) {
-        this.mContext = mContext;
+        super(mContext);
         dm = new DisplayMetrics();
         WindowManager windowManager = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE);
         windowManager.getDefaultDisplay().getMetrics(dm);
+        setContentView();
     }
 
-    public AlertView builder() {
+    private void setContentView() {
         // 获取Dialog布局
         View view = LayoutInflater.from(mContext).inflate(R.layout.alert_view, null);
 
@@ -62,14 +61,11 @@ public class AlertView {
         btn_pos.setVisibility(View.GONE);
         img_line = view.findViewById(R.id.img_line);
         img_line.setVisibility(View.GONE);
-
-        dialog = new Dialog(mContext,R.style.AlertView);
-        dialog.setContentView(view);
-
-        // 调整dialog背景大小
-        lLayout_bg.setLayoutParams(new FrameLayout.LayoutParams((int) (dm.widthPixels * 0.8), FrameLayout.LayoutParams.WRAP_CONTENT));
-        return this;
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams((int) (dm.widthPixels * 0.8), FrameLayout.LayoutParams.WRAP_CONTENT);
+        contentView(view, params);
+        animType(BaseDialog.CENTER);
     }
+
 
     /**
      * 设置标题
@@ -113,7 +109,7 @@ public class AlertView {
                 if (listener != null) {
                     listener.onClick(v);
                 }
-                dialog.dismiss();
+                dismiss();
             }
         });
         return this;
@@ -134,14 +130,9 @@ public class AlertView {
                 if (listener != null) {
                     listener.onClick(v);
                 }
-                dialog.dismiss();
+                dismiss();
             }
         });
-        return this;
-    }
-
-    public AlertView setCanceledOnTouchOutside(boolean cancel) {
-        dialog.setCanceledOnTouchOutside(cancel);
         return this;
     }
 
@@ -149,7 +140,7 @@ public class AlertView {
     public void show() {
         setLayout();
         try {
-            dialog.show();
+            super.show();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -174,12 +165,6 @@ public class AlertView {
             btn_pos.setText("确定");
             btn_pos.setVisibility(View.VISIBLE);
             btn_pos.setBackgroundResource(R.drawable.alertdialog_single_selector);
-            btn_pos.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    dialog.dismiss();
-                }
-            });
         }
 
         if (showPosBtn && showNegBtn) {
@@ -200,5 +185,4 @@ public class AlertView {
             btn_neg.setBackgroundResource(R.drawable.alertdialog_single_selector);
         }
     }
-
 }
