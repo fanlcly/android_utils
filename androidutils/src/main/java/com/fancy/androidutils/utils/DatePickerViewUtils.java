@@ -23,7 +23,6 @@ public class DatePickerViewUtils {
     private static final String EMPTY = "";    // 空字符串
 
     private DatePickerViewUtils() {
-        throw new UnsupportedOperationException("u can't instantiate me...");
     }
 
 

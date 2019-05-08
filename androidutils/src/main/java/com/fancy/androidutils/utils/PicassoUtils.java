@@ -40,7 +40,6 @@ public class PicassoUtils {
 
 
     private PicassoUtils() {
-        throw new UnsupportedOperationException("no instantiate");
     }
 
 

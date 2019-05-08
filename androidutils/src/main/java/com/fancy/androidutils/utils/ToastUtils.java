@@ -17,7 +17,7 @@ public class ToastUtils {
 
     private ToastUtils() {
         /* cannot be instantiated */
-        throw new UnsupportedOperationException("u can't instantiate me...");
+//        throw new UnsupportedOperationException("u can't instantiate me...");
     }
 
 

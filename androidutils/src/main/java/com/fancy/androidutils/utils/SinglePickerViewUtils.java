@@ -22,7 +22,6 @@ public class SinglePickerViewUtils {
 
 
     private SinglePickerViewUtils() {
-        throw new UnsupportedOperationException("u can't instantiate me...");
     }
 
 
