@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import com.fancy.androidutils.utils.DensityUtils;
 import com.fancy.androidutils.widget.AlertView;
 import com.fancy.androidutils.widget.BaseDialog;
+import com.fancy.androidutils.widget.LoadingView;
 
 public class MainActivity extends AppCompatActivity {
     private MainActivity mActivity;
@@ -98,6 +99,17 @@ public class MainActivity extends AppCompatActivity {
                         .offset(0, DensityUtils.dp2px(mActivity, 20))
                         .canceledOnTouchOutside(false)
                         .show();
+
+
+            }
+        });
+
+  findViewById(R.id.btn8).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LoadingView dialog_bottom = new LoadingView(mActivity);
+
+                dialog_bottom.show();
 
 
             }

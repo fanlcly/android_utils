@@ -43,6 +43,11 @@
                 style="@style/btn"
                 android:text="dialog_bottom" />
 
+            <Button
+                android:id="@+id/btn8"
+                style="@style/btn"
+                android:text="loading_dialog" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
