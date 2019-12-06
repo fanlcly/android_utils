@@ -150,7 +150,7 @@ public class BottomNavigationBar extends LinearLayout {
                 @Override
                 public void onClick(View view) {
 //                    Toast.makeText(context, titles[index], Toast.LENGTH_SHORT).show();
-                    setSelectStyle(index);
+                    //setSelectStyle(index);
                     if (onItemOnclickListener != null) {
                         onItemOnclickListener.onItemClick(index);
                     }
