@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <Button
@@ -22,22 +25,27 @@
                 android:id="@+id/btn2"
                 style="@style/btn"
                 android:text="数据列表" />
+
             <Button
                 android:id="@+id/btn3"
                 style="@style/btn"
                 android:text="alertView" />
+
             <Button
                 android:id="@+id/btn4"
                 style="@style/btn"
                 android:text="dialog_left" />
+
             <Button
                 android:id="@+id/btn5"
                 style="@style/btn"
                 android:text="dialog_top" />
+
             <Button
                 android:id="@+id/btn6"
                 style="@style/btn"
                 android:text="dialog_right" />
+
             <Button
                 android:id="@+id/btn7"
                 style="@style/btn"
@@ -47,7 +55,19 @@
                 android:id="@+id/btn8"
                 style="@style/btn"
                 android:text="loading_dialog" />
-
         </LinearLayout>
     </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divide_c6c6c6" />
+
+    <com.fancy.androidutils.widget.BottomNavigationBar
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" />
+
+
 </LinearLayout>

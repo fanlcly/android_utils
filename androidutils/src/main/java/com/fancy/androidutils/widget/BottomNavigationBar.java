@@ -137,8 +137,13 @@ public class BottomNavigationBar extends LinearLayout {
         for (int i = 0; i < size; i++) {
             View view = LayoutInflater.from(context).inflate(R.layout.item_navigation_button, null, Boolean.FALSE);
             ImageView imageView = view.findViewById(R.id.iv_img);
+            ViewGroup.LayoutParams imgParams = imageView.getLayoutParams();
+            imgParams.width = imgwidth;
+            imgParams.height = imgheight;
+            imageView.setLayoutParams(imgParams);
             imageView.setImageResource(imgs[i]);
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+
             TextView textView = view.findViewById(R.id.tv_info);
             View dot = view.findViewById(R.id.v_dot);
             TextView tvMessageDot = view.findViewById(R.id.tv_message_dot);
