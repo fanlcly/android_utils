@@ -18,7 +18,7 @@ import com.fancy.androidutils.R;
  */
 public class LoadingView extends BaseDialog {
     private final DisplayMetrics dm;
-    private String message;
+    private String message = "加载中...";
     private boolean isShowMessage = true;
     private TextView msgText;
 
@@ -36,6 +36,7 @@ public class LoadingView extends BaseDialog {
         msgText = view.findViewById(R.id.tipTextView);
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         contentView(view, params);
+        dimAmount(0);
         animType(BaseDialog.CENTER);
     }
 

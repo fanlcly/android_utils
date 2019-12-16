@@ -16,7 +16,7 @@
     <!--线条，分割线基本颜色-->
     <color name="divide_c6c6c6">#c6c6c6</color>
 
-
+    <color name="bg_dark_10">#e6333333</color>
     <!--背景基本颜色-->
     <color name="bg_b1b1b2">#b1b1b2</color>
 
