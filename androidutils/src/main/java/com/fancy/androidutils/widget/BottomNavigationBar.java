@@ -158,6 +158,7 @@ public class BottomNavigationBar extends LinearLayout {
                     //setSelectStyle(index);
                     if (onItemOnclickListener != null) {
                         onItemOnclickListener.onItemClick(index);
+                        currentIndex = index;
                     }
                 }
             });
@@ -169,6 +170,10 @@ public class BottomNavigationBar extends LinearLayout {
             addView(view, lp);
         }
         setSelectStyle(currentIndex);
+    }
+
+    public int getCurrentIndex() {
+        return currentIndex;
     }
 
     public void setSelectStyle(int index) {
