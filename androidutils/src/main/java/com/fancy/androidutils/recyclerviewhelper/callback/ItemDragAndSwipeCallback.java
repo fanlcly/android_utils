@@ -1,9 +1,10 @@
 package com.fancy.androidutils.recyclerviewhelper.callback;
 
 import android.graphics.Canvas;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
+
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.fancy.androidutils.R;
 import com.fancy.androidutils.recyclerviewhelper.base.BaseItemDraggableAdapter;

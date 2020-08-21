@@ -1,9 +1,6 @@
 package com.fancy.androidutils.adapter;
 
-import android.support.annotation.ColorRes;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
-import android.widget.TextView;
+import androidx.annotation.Nullable;
 
 import com.fancy.androidutils.R;
 import com.fancy.androidutils.recyclerviewhelper.base.BaseQuickAdapter;

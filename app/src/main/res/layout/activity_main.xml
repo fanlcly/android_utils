@@ -55,6 +55,10 @@
                 android:id="@+id/btn8"
                 style="@style/btn"
                 android:text="loading_dialog" />
+            <Button
+                android:id="@+id/btn9"
+                style="@style/btn"
+                android:text="抽奖" />
         </LinearLayout>
     </ScrollView>
 

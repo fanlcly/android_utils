@@ -1,6 +1,7 @@
 package com.fancy.android_utils.adapter;
 
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.fancy.android_utils.R;
 import com.fancy.androidutils.recyclerviewhelper.base.BaseQuickAdapter;

@@ -1,9 +1,10 @@
 package com.fancy.androidutils.recyclerviewhelper.base;
 
-import android.support.annotation.IntRange;
-import android.support.annotation.LayoutRes;
 import android.util.SparseIntArray;
 import android.view.ViewGroup;
+
+import androidx.annotation.IntRange;
+import androidx.annotation.LayoutRes;
 
 import com.fancy.androidutils.recyclerviewhelper.entity.IExpandable;
 import com.fancy.androidutils.recyclerviewhelper.entity.MultiItemEntity;

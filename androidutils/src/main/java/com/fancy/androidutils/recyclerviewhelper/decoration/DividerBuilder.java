@@ -1,6 +1,7 @@
 package com.fancy.androidutils.recyclerviewhelper.decoration;
 
-import android.support.annotation.ColorInt;
+
+import androidx.annotation.ColorInt;
 
 /**
  * file explain

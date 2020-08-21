@@ -1,6 +1,7 @@
 package com.fancy.androidutils.encrypt;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import java.nio.charset.Charset;
 import java.security.MessageDigest;

@@ -1,8 +1,9 @@
 package com.fancy.androidutils.recyclerviewhelper.base;
 
-import android.support.annotation.Nullable;
 import android.util.SparseArray;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 import com.fancy.androidutils.recyclerviewhelper.provider.BaseItemProvider;
 import com.fancy.androidutils.recyclerviewhelper.util.MultiTypeDelegate;
