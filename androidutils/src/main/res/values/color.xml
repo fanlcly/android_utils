@@ -19,6 +19,8 @@
     <color name="bg_dark_10">#e6333333</color>
     <!--背景基本颜色-->
     <color name="bg_b1b1b2">#b1b1b2</color>
-
-
+    <!--toast背景-->
+    <color name="bg_trans_60">#99000000</color>
+    <!--边框-->
+    <color name="bg_F0F0F0">#F0F0F0</color>
 </resources>

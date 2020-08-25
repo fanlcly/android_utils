@@ -16,26 +16,41 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btn1"
-                style="@style/btn"
-                android:text="数组列表" />
-
-            <Button
-                android:id="@+id/btn2"
-                style="@style/btn"
-                android:text="数据列表" />
 
             <Button
                 android:id="@+id/btn3"
                 style="@style/btn"
-                android:text="弹窗" />
+                android:text="带两个按钮的弹窗" />
 
+            <Button
+                android:id="@+id/btn4"
+                style="@style/btn"
+                android:text="带一个按钮的弹窗" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/btn"
+                android:text="从左边弹出的弹窗" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/btn"
+                android:text="从右边弹出的弹窗" />
+
+            <!--<Button-->
+            <!--android:id="@+id/btn7"-->
+            <!--style="@style/btn"-->
+            <!--android:text="从上面弹出的弹窗" />-->
+     <Button
+                android:id="@+id/btn8"
+                style="@style/btn"
+                android:text="从下面弹出的弹窗" />
 
             <Button
                 android:id="@+id/btn9"
                 style="@style/btn"
-                android:text="抽奖" />
+                android:text="加载框" />
+
         </LinearLayout>
     </ScrollView>
 
@@ -43,12 +58,5 @@
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
         android:background="@color/divide_c6c6c6" />
-
-    <com.fancy.androidutils.widget.BottomNavigationBar
-        android:id="@+id/bottom_navigation_bar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true" />
-
 
 </LinearLayout>

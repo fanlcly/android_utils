@@ -15,14 +15,14 @@ import com.fancy.android_utils.widget.PrizeView;
  */
 public class PrizeActivity extends Activity {
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prize);
-       PrizeView luckpan =  findViewById(R.id.luckpan);
+        PrizeView luckpan = findViewById(R.id.luckpan);
         luckpan.setOnLuckPanAnimEndListener(new PrizeView.OnLuckPanAnimEndListener() {
             @Override
             public void onAnimEnd(int position, String msg) {
-                Toast.makeText(PrizeActivity.this, "位置："+position+"提示信息："+msg, Toast.LENGTH_SHORT).show();
+                Toast.makeText(PrizeActivity.this, "位置：" + position + "提示信息：" + msg, Toast.LENGTH_SHORT).show();
             }
         });
     }
