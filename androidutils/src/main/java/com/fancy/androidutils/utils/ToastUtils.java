@@ -1,6 +1,7 @@
 package com.fancy.androidutils.utils;
 
 import android.content.Context;
+import android.content.MutableContextWrapper;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
@@ -20,7 +21,6 @@ import com.fancy.androidutils.R;
  * @Version: 1.0
  */
 public class ToastUtils {
-
 
     private ToastUtils() {
         throw new UnsupportedOperationException("u can't instantiate me...");
