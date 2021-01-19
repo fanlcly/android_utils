@@ -44,12 +44,26 @@ public class SinglePickerViewUtils {
      * @param view
      */
     public <T> void showWheelView(final Context context, final List<T> data, final TextView view) {
+        showWheelView(context, data, view, null);
+    }
+
+    /**
+     * 单列数据滚轮样式
+     *
+     * @param context
+     * @param data
+     * @param view
+     */
+    public <T> void showWheelView(final Context context, final List<T> data, final TextView view, final OnOpteionsSelectedListener onOpteionsSelectedListener) {
         OptionsPickerView pvOptions = new OptionsPickerBuilder(context, new OnOptionsSelectListener() {
             @Override
             public void onOptionsSelect(int options1, int option2, int options3, View v) {
                 //返回的分别是三个级别的选中位置
                 String tx = data.get(options1).toString();
                 view.setText(tx);
+                if (onOpteionsSelectedListener != null) {
+                    onOpteionsSelectedListener.OnOpteionsSelected(options1);
+                }
             }
         })
                 .setSubmitText("确定")//确定按钮文字
@@ -63,7 +77,9 @@ public class SinglePickerViewUtils {
         pvOptions.show();
     }
 
-
+    public interface OnOpteionsSelectedListener {
+        void OnOpteionsSelected(int position);
+    }
 
 
 }
