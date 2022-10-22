@@ -31,11 +31,23 @@
                 style="@style/btn"
                 android:text="弹窗" />
 
+            <Button
+                android:id="@+id/btn4"
+                style="@style/btn"
+                android:text="dialogx弹窗" />
+
 
             <Button
                 android:id="@+id/btn9"
                 style="@style/btn"
                 android:text="抽奖" />
+
+            <Button
+                android:id="@+id/btn10"
+                style="@style/btn"
+                android:text="toast" />
+
+
         </LinearLayout>
     </ScrollView>
 

@@ -16,6 +16,7 @@ import com.fancy.androidutils.R;
  * @CreateDate: 2019/7/17 17:28
  * @Version: 1.0
  */
+@Deprecated
 public class LoadingView extends BaseDialog {
     private final DisplayMetrics dm;
     private String message = "加载中...";

@@ -20,6 +20,7 @@ import com.fancy.androidutils.R;
  * @CreateDate: 2019/9/3 9:14
  * @Version: 1.0
  */
+@Deprecated
 public class ToastUtils {
 
     private ToastUtils() {

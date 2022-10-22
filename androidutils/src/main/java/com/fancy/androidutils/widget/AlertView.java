@@ -20,6 +20,7 @@ import com.fancy.androidutils.R;
  * @version 1.0 2018\11\29 0029
  * @since JDK 1.7
  */
+@Deprecated
 public class AlertView extends BaseDialog{
 
     private final DisplayMetrics dm;

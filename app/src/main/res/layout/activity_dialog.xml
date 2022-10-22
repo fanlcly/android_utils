@@ -41,7 +41,7 @@
             <!--android:id="@+id/btn7"-->
             <!--style="@style/btn"-->
             <!--android:text="从上面弹出的弹窗" />-->
-     <Button
+            <Button
                 android:id="@+id/btn8"
                 style="@style/btn"
                 android:text="从下面弹出的弹窗" />
@@ -50,6 +50,12 @@
                 android:id="@+id/btn9"
                 style="@style/btn"
                 android:text="加载框" />
+
+
+            <Button
+                android:id="@+id/btn10"
+                style="@style/btn"
+                android:text="原生alertdialog" />
 
         </LinearLayout>
     </ScrollView>

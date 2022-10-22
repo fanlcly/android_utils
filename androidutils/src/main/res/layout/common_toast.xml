@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/motion_toast_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|bottom"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/toast_frame_style">
+
+    <ImageView
+        android:id="@+id/custom_toast_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_info_yellow" />
+
+
+    <TextView
+        android:id="@+id/custom_toast_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/custom_toast_image"
+        android:ellipsize="marquee"
+        android:maxLines="3"
+        android:text="我被弹出来了我被弹出来了我被弹出来了"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

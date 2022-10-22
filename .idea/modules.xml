@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/android_utils.iml" filepath="$PROJECT_DIR$/android_utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/android_utils.iml" filepath="$PROJECT_DIR$/.idea/android_utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/androidutils/androidutils.iml" filepath="$PROJECT_DIR$/androidutils/androidutils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android_utils.iml" filepath="$PROJECT_DIR$/.idea/modules/android_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidutils/android_utils.androidutils.iml" filepath="$PROJECT_DIR$/.idea/modules/androidutils/android_utils.androidutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidutils/android_utils.androidutils.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/androidutils/android_utils.androidutils.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidutils/android_utils.androidutils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/androidutils/android_utils.androidutils.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidutils/android_utils.androidutils.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/androidutils/android_utils.androidutils.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android_utils.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android_utils.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android_utils.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android_utils.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android_utils.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android_utils.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android_utils.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android_utils.app.unitTest.iml" />
     </modules>
   </component>
 </project>

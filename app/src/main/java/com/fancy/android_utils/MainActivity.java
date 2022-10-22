@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.fancy.androidutils.encrypt.SharedWrapper;
 import com.fancy.androidutils.utils.DensityUtils;
+import com.fancy.androidutils.utils.toast.FToast;
 import com.fancy.androidutils.widget.AlertView;
 import com.fancy.androidutils.widget.BaseDialog;
 import com.fancy.androidutils.widget.BottomNavigationBar;
@@ -69,6 +70,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        findViewById(R.id.btn4).setOnClickListener(v -> {
+            Intent intent = new Intent(mActivity, DialogXActivity.class);
+            startActivity(intent);
+        });
+
+
 
         findViewById(R.id.btn9).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        findViewById(R.id.btn10).setOnClickListener(view -> FToast.Companion.showToast(mActivity,"简单的弹窗"));
+
+        findViewById(R.id.btn10).setOnClickListener(view -> FToast.Companion.showToast(mActivity,"简单的弹窗"));
 
     }
 }

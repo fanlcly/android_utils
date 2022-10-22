@@ -7,7 +7,6 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.fancy.androidutils.adapter.ArrayAdapter;
 import com.fancy.androidutils.recyclerviewhelper.decoration.LinearDividerItemDecoration;
 
 import java.util.ArrayList;
@@ -34,7 +33,7 @@ public class ListActivity extends Activity {
             arrays.add("android" + i);
         }
 
-        recyclerView.setAdapter(new ArrayAdapter(arrays));
+//        recyclerView.setAdapter(new ArrayAdapter(arrays));
         recyclerView.addItemDecoration(new LinearDividerItemDecoration(this, R.color.red, 5));
     }
 }

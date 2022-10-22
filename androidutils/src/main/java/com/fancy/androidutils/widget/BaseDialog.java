@@ -22,6 +22,7 @@ import com.fancy.androidutils.R;
  * @version 1.0 2019/5/5 0005
  * @since JDK 1.8
  */
+@Deprecated
 public class BaseDialog extends Dialog {
     protected Context mContext;
 

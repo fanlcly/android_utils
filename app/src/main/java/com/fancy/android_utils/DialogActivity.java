@@ -2,6 +2,7 @@ package com.fancy.android_utils;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.util.DisplayMetrics;
@@ -10,10 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.fancy.android_utils.R;
 import com.fancy.androidutils.utils.DensityUtils;
+import com.fancy.androidutils.utils.toast.FToast;
 import com.fancy.androidutils.widget.AlertView;
 import com.fancy.androidutils.widget.BaseDialog;
 import com.fancy.androidutils.widget.LoadingView;
@@ -125,6 +128,26 @@ public class DialogActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btn10).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new AlertDialog.Builder(DialogActivity.this)
+                        .setTitle("原生弹窗测试")
+                        .setMessage("需要必要的权限才可以正常使用该功能，您已拒绝获得该权限。\n如果需要重新授权，您可以点击“允许”按钮进入系统设置进行授权")
+                        .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                FToast.Companion.showToast(DialogActivity.this,"点击了取消");
+                            }
+                        })
+                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                FToast.Companion.showToast(DialogActivity.this,"点击了确定");
+                            }
+                        }).show();
+            }
+        });
 
     }
 }
