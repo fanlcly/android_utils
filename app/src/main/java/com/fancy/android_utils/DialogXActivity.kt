@@ -11,6 +11,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.fancy.android_utils.widget.DialogBindView
 import com.fancy.androidutils.utils.DensityUtils
 import com.kongzue.dialogx.dialogs.*
 import com.kongzue.dialogx.interfaces.OnBindView
@@ -197,6 +198,14 @@ class DialogXActivity : AppCompatActivity() {
                 .setBaseViewMarginBottom(-DensityUtils.dp2px(this, 45F))
                 .show()
         }
+
+
+        findViewById<View>(R.id.btn12).setOnClickListener {
+            val bindView = DialogBindView()
+            CustomDialog.show(bindView).maskColor = resources.getColor(R.color.black30)
+            bindView.setText("动态赋值")
+        }
+
 
     }
 

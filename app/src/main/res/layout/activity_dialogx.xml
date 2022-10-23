@@ -68,6 +68,11 @@
                 style="@style/btn"
                 android:text="对话框显示在按钮上" />
 
+            <Button
+                android:id="@+id/btn12"
+                style="@style/btn"
+                android:text="完全自定义对话框抽取" />
+
         </LinearLayout>
     </ScrollView>
 
