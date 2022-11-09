@@ -17,7 +17,7 @@
             android:gravity="center_vertical"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:text="回复"
+            android:text="写入文件"
             android:textColor="@color/black90"
             android:textSize="16dp" />
 
@@ -28,7 +28,7 @@
             android:gravity="center_vertical"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:text="发布"
+            android:text="写入"
             android:textColor="@color/dialogxColorBlue"
             android:textSize="16dp" />
 
@@ -56,6 +56,6 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
-        android:text="回复并转发" />
+        android:text="写入前是否删除" />
 
 </LinearLayout>

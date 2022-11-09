@@ -25,6 +25,7 @@
         <activity android:name=".PrizeActivity" />
         <activity android:name=".DialogActivity" />
         <activity android:name=".DialogXActivity" />
+        <activity android:name=".FileActivity" />
     </application>
 
 </manifest>

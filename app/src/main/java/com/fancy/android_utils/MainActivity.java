@@ -77,17 +77,17 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        findViewById(R.id.btn9).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(mActivity, PrizeActivity.class);
-                startActivity(intent);
-            }
+        findViewById(R.id.btn9).setOnClickListener(v -> {
+            Intent intent = new Intent(mActivity, PrizeActivity.class);
+            startActivity(intent);
         });
 
         findViewById(R.id.btn10).setOnClickListener(view -> FToast.Companion.showToast(mActivity,"简单的弹窗"));
 
-        findViewById(R.id.btn10).setOnClickListener(view -> FToast.Companion.showToast(mActivity,"简单的弹窗"));
+        findViewById(R.id.btn11).setOnClickListener(view -> {
+            Intent intent = new Intent(mActivity, FileActivity.class);
+            startActivity(intent);
+        });
 
     }
 }

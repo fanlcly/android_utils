@@ -48,6 +48,11 @@
                 android:text="toast" />
 
 
+            <Button
+                android:id="@+id/btn11"
+                style="@style/btn"
+                android:text="文件操作" />
+
         </LinearLayout>
     </ScrollView>
 
